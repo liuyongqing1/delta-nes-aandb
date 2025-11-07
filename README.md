@@ -31,38 +31,36 @@
 
 ### 🚀 快速安装（推荐）
 
-1. 下载 `NES-AB.deltaskin.zip` 文件
-2. 将文件扩展名从 `.zip` 改为 `.deltaskin`
-3. 使用 AirDrop 或文件管理器将文件传输到 iOS 设备
-4. 在 iOS 设备上点击文件，选择"用 Delta 打开"
-5. 在 Delta 的设置中选择这个新皮肤
-
-### 方法一：直接导入
-
-1. 克隆或下载此仓库
-2. 在 iOS 设备上，将 `NES-AB.deltaskin.zip` 重命名为 `NES-AB.deltaskin`
-3. 用 Delta 打开该文件
+1. 下载或克隆此仓库
+2. 将 `NES-AB.deltaskin` 文件夹压缩为 ZIP 文件
+3. 将 ZIP 文件的扩展名从 `.zip` 改为 `.deltaskin`
+4. 使用 AirDrop 或文件管理器将 `.deltaskin` 文件传输到 iOS 设备
+5. 在 iOS 设备上点击文件，选择"用 Delta 打开"
+6. 在 Delta 的设置中选择这个新皮肤
 
 ### 方法二：开发者模式
 
 1. 克隆此仓库到本地
-2. 在 `info.json` 中设置 `"debug": true` 启用调试模式
+2. 在 `info.json` 中设置 `"debug": true` 启用调试模式查看按钮边界
 3. 运行 `python3 generate_skin_pdfs.py` 重新生成 PDF（如需自定义）
-4. 将 `NES-AB.deltaskin` 文件夹导入 Delta
+4. 将修改后的 `NES-AB.deltaskin` 文件夹打包并导入 Delta
 
-**✨ 注意**：本皮肤已包含完整的 PDF 布局文件，无需额外创建，可直接使用！
+**✨ 特点**：
+- 本皮肤已包含完整的 PDF 布局文件，可直接使用
+- **透明背景设计** - 游戏画面不会被遮挡
+- **半透明按钮** - 既能看清按钮位置，又不影响游戏视野
 
 ## 文件结构
 
 ```
 delta-nes-aandb/
-├── NES-AB.deltaskin/          # 皮肤文件夹
+├── NES-AB.deltaskin/          # 皮肤文件夹（压缩后改名为.deltaskin安装）
 │   ├── info.json              # 皮肤配置文件（包含所有按钮定义和布局）
-│   ├── portrait.pdf           # 竖屏布局图像 ✓ 已包含
-│   └── landscape.pdf          # 横屏布局图像 ✓ 已包含
-├── NES-AB.deltaskin.zip       # 可安装的皮肤包（重命名为 .deltaskin 后安装）
+│   ├── portrait.pdf           # 竖屏布局图像 ✓ 透明背景
+│   └── landscape.pdf          # 横屏布局图像 ✓ 透明背景
 ├── generate_skin_pdfs.py      # PDF 生成脚本（供开发者自定义使用）
-└── README.md                  # 说明文档
+├── INSTALL.md                 # 详细安装指南
+└── README.md                  # 项目说明文档
 ```
 
 ## info.json 配置说明
@@ -132,7 +130,7 @@ python3 generate_skin_pdfs.py
 
 ## 按钮颜色方案
 
-本皮肤使用了清晰的颜色区分不同按钮：
+本皮肤使用了清晰的颜色区分不同按钮，所有按钮均为**半透明效果**：
 
 | 按钮 | 颜色 | 说明 |
 |------|------|------|
@@ -143,7 +141,10 @@ python3 generate_skin_pdfs.py
 | **Menu** | 🔵 蓝色 (#3498DB) | Delta 菜单 |
 | **D-Pad** | ⚫ 深灰色 (#444444) | 方向键 |
 
-紫色的 A+B 组合按钮特别醒目，方便在游戏中快速识别和使用。
+**设计特点**：
+- 🎨 紫色的 A+B 组合按钮特别醒目，方便在游戏中快速识别
+- 👁️ 50% 透明度 - 按钮清晰可见，不会遮挡游戏画面
+- 🎮 透明背景 - 游戏内容完整显示，无任何遮挡
 
 ## 技术细节
 
@@ -179,6 +180,13 @@ python3 generate_skin_pdfs.py
 欢迎提交 Issue 和 Pull Request 来改进这个皮肤！
 
 ## 更新日志
+
+- **v1.1.0** (2025-11-07)
+  - 🔧 修复背景遮挡游戏画面的问题
+  - ✨ 采用透明背景设计
+  - 🎨 所有按钮使用50%半透明效果
+  - 📝 更新安装文档和说明
+  - 🗑️ 移除预打包的ZIP文件
 
 - **v1.0.0** (2025-11-07)
   - 初始版本
