@@ -8,7 +8,8 @@
       "standard": {
         "portrait": {
           "assets": {
-            "resizable": "portrait.pdf"
+            "large": "portrait@2x.png",
+            "small": "portrait.png"
           },
           "items": [
             {
@@ -135,7 +136,8 @@
         },
         "landscape": {
           "assets": {
-            "resizable": "landscape.pdf"
+            "large": "landscape@2x.png",
+            "small": "landscape.png"
           },
           "items": [
             {
@@ -264,7 +266,8 @@
       "edgeToEdge": {
         "portrait": {
           "assets": {
-            "resizable": "portrait.pdf"
+            "large": "portrait@2x.png",
+            "small": "portrait.png"
           },
           "items": [
             {
@@ -391,7 +394,8 @@
         },
         "landscape": {
           "assets": {
-            "resizable": "landscape.pdf"
+            "large": "landscape@2x.png",
+            "small": "landscape.png"
           },
           "items": [
             {
