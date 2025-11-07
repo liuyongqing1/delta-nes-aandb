@@ -4,19 +4,21 @@
 
 ### 在 iOS 设备上安装
 
-1. **下载皮肤文件**
-   - 从 GitHub 下载 `NES-AB.deltaskin.zip` 文件
+1. **下载皮肤源文件**
+   - 从 GitHub 下载或克隆此仓库
+   - 或者下载ZIP并解压
 
-2. **重命名文件**
-   - 将文件从 `NES-AB.deltaskin.zip` 重命名为 `NES-AB.deltaskin`
-   - 注意：直接改扩展名即可，不需要解压
+2. **打包皮肤**
+   - 将 `NES-AB.deltaskin` 文件夹压缩为 ZIP 文件
+   - 将 ZIP 文件重命名：从 `.zip` 改为 `.deltaskin`
+   - 例如：`NES-AB.zip` → `NES-AB.deltaskin`
 
 3. **传输到设备**
    - 使用 AirDrop 发送到 iPhone/iPad
    - 或者通过 iCloud Drive、文件 App 等方式传输
 
 4. **安装皮肤**
-   - 在 iOS 设备上找到 `NES-AB.deltaskin` 文件
+   - 在 iOS 设备上找到 `.deltaskin` 文件
    - 点击文件，选择"用 Delta 打开"
    - Delta 会自动安装皮肤
 
@@ -25,6 +27,16 @@
    - 进入 **设置 (Settings)**
    - 选择 **控制器皮肤 (Controller Skin)**
    - 选择 **NES with A+B Button**
+
+## 重要提示
+
+### ✨ 透明背景设计
+本皮肤采用**透明背景**设计，确保：
+- ✅ 游戏画面不会被遮挡
+- ✅ 控制按钮半透明，清晰可见
+- ✅ 游戏内容完整显示
+
+如果之前使用的版本出现黑屏或画面被遮挡，请重新下载最新版本！
 
 ## 使用说明
 
