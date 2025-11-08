@@ -179,7 +179,28 @@ python3 generate_skin_pdfs.py
 
 欢迎提交 Issue 和 Pull Request 来改进这个皮肤！
 
+## iPhone 15 Pro 快速安装
+
+我们提供了iPhone 15 Pro专用的一键生成脚本：
+
+```bash
+python3 build_skin_iphone15pro.py
+```
+
+运行后会生成 `NES-AB-iPhone15Pro.deltaskin` 文件（约2KB），直接发送到设备即可使用！
+
+- ✅ 专为iPhone 15 Pro优化（393x852分辨率）
+- ✅ 完美适配Dynamic Island
+- ✅ 一键生成，即用即装
+
 ## 更新日志
+
+- **v1.1.1** (2025-11-08)
+  - 🎯 专门优化iPhone 15 Pro支持
+  - 📐 更新edgeToEdge配置适配393x852分辨率
+  - 🔨 添加一键生成脚本 build_skin_iphone15pro.py
+  - 📦 生成专用.deltaskin安装包
+  - 🖼️ 使用PNG格式提升兼容性
 
 - **v1.1.0** (2025-11-07)
   - 🔧 修复背景遮挡游戏画面的问题
