@@ -184,22 +184,41 @@ python3 generate_skin_pdfs.py
 我们提供了iPhone 15 Pro专用的一键生成脚本：
 
 ```bash
-python3 build_skin_iphone15pro.py
+python3 generate_pngs_with_bg.py
 ```
 
-运行后会生成 `NES-AB-iPhone15Pro.deltaskin` 文件（约2KB），直接发送到设备即可使用！
+运行后手动打包：
+```bash
+cd NES-AB.deltaskin
+zip -r ../NES-AB-iPhone15Pro.deltaskin *
+cd ..
+```
 
+或者直接使用已生成的 `NES-AB-iPhone15Pro.deltaskin` 文件（约2.5KB）！
+
+**设计特点**：
 - ✅ 专为iPhone 15 Pro优化（393x852分辨率）
 - ✅ 完美适配Dynamic Island
-- ✅ 一键生成，即用即装
+- 🎮 **上方65%透明** - 游戏画面完整显示
+- 🕹️ **下方35%半透明背景** - 控制器按钮清晰可见
+- 🎯 最佳视觉体验 - 既能看到游戏，又能看到按钮
 
 ## 更新日志
 
-- **v1.1.1** (2025-11-08)
+- **v1.1.3** (2025-11-08)
+  - 🔧 修复按钮不可见问题
+  - ✨ 为控制器区域添加半透明背景
+  - 🎮 竖屏：上方65%透明(游戏)，下方35%半透明(控制器)
+  - 🕹️ 横屏：中间40%透明(游戏)，两侧各30%半透明(控制器)
+  - 📦 新增 generate_pngs_with_bg.py 生成器
+
+- **v1.1.2** (2025-11-08)
   - 🎯 专门优化iPhone 15 Pro支持
   - 📐 更新edgeToEdge配置适配393x852分辨率
   - 🔨 添加一键生成脚本 build_skin_iphone15pro.py
   - 📦 生成专用.deltaskin安装包
+
+- **v1.1.1** (2025-11-08)
   - 🖼️ 使用PNG格式提升兼容性
 
 - **v1.1.0** (2025-11-07)
